@@ -1,5 +1,5 @@
 ﻿/*Margins*/
-David Cruz, [24.05.17 21:58] .margin-negative-5 {
+.margin-negative-5 {
     margin: -5px !important;
 }
 
@@ -209,4 +209,54 @@ David Cruz, [24.05.17 21:58] .margin-negative-5 {
 
 .margin-left-50 {
     margin-left: 50px !important;
+}
+
+/*Input icons*/
+span.input-icon, span.input-help {
+    display: block;
+    position: relative;
+}
+
+.input-icon > input {
+    padding-left: 30px !important;
+    padding-right: 6px;
+}
+
+.input-icon.input-icon-right > input {
+    padding-left: 6px !important;
+    padding-right: 30px !important;
+}
+
+span.input-help > input {
+    padding-left: 30px;
+    padding-right: 6px;
+}
+
+.input-icon > [class*="fa-"], .input-icon > [class*="ti-"] {
+    bottom: 0;
+    display: inline-block;
+    left: 5px;
+    color: #c8c7cc;
+    line-height: 36px;
+    padding: 0 3px;
+    position: absolute;
+    top: -1px;
+    z-index: 2;
+}
+
+.input-icon > .input-lg + [class*="fa-"], .input-icon > .input-lg + [class*="ti-"] {
+    line-height: 48px;
+}
+
+.input-icon > .input-sm + [class*="fa-"], .input-icon > .input-sm + [class*="ti-"] {
+    line-height: 32px;
+}
+
+.input-icon.input-icon-right > [class*="fa-"], .input-icon.input-icon-right > [class*="ti-"] {
+    left: auto;
+    right: 4px;
+}
+/*Responsive text*/
+h6 {
+    font-size: 2.5vh;
 }
