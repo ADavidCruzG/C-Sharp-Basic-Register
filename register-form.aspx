@@ -25,25 +25,35 @@
                         </div>
                         <div class="panel-body">
                             <div class="form-group">
+                                <label class="control-label" for="txtFirstName">Nombre</label>
                                 <span class="input-icon">
-                                    <asp:TextBox ID="txtUserName" runat="server" class="form-control" placeholder="Nombre de usuario"></asp:TextBox>
-                                    <i class="fa fa-user"></i>
+                                    <asp:TextBox ID="txtFirstName" runat="server" class="form-control" placeholder="Nombre" required="true"></asp:TextBox>
+                                    <i class="fa fa-id-card-o"></i>
                                 </span>
                             </div>
                             <div class="form-group">
+                                <label class="control-label" for="txtLastName">Apellido</label>
                                 <span class="input-icon">
-                                    <asp:TextBox ID="txtPasssword" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
-                                    <i class="fa fa-lock"></i>
+                                    <asp:TextBox ID="txtLastName" runat="server" class="form-control" placeholder="Apellido" required="true"></asp:TextBox>
+                                    <i class="fa fa-id-card-o"></i>
                                 </span>
                             </div>
                             <div class="form-group">
+                                <label class="control-label" for="txtEmail">E-mail</label>
                                 <span class="input-icon">
-                                    <asp:TextBox ID="txtEmail" runat="server" class="form-control" placeholder="E-mail" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox ID="txtEmail" runat="server" class="form-control" placeholder="E-mail" TextMode="Email" required="true"></asp:TextBox>
                                     <i class="fa fa-at"></i>
                                 </span>
                             </div>
+                            <div class="form-group">
+                                <label class="control-label" for="txtPasssword">Contraseña</label>
+                                <span class="input-icon">
+                                    <asp:TextBox ID="txtPasssword" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password" required="true"></asp:TextBox>
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
                             <div class="form-group text-center">
-                                <button id="btnRegister" runat="server" class="btn btn-sm btn-primary">
+                                <button id="btnRegister" runat="server" class="btn btn-sm btn-primary" type="submit" onserverclick="registerNewUser">
                                     <i class="fa fa-floppy-o"></i>
                                     <span class="hidden-xs"><b>Regístrese</b></span>
                                 </button>
