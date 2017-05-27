@@ -10,3 +10,4 @@ Formulario de registro con validaciones básicas y diseño responsive.
 - Font Awesome
 
 
+> *No se implementa encriptación de contraseña
