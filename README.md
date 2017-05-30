@@ -4,6 +4,7 @@ Formulario de registro con validaciones básicas y diseño responsive.
 ### Lenguajes, tecnologías y herramientas usadas
 
 - C#
+- ASP.NET
 - Javascript
 - Bootstrap
 - Conexión a base de datos SQL
